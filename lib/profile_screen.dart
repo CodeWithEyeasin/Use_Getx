@@ -25,7 +25,15 @@ class _ProfileScreenState extends State<ProfileScreen> {
               //PUSH_AND_REMOVE_UNTIL
               Get.offAll(()=> const HomeScreen());
             }, child: const Text('Go to  Home')),
-            ElevatedButton(onPressed: (){}, child: const Text('Back')),
+            ElevatedButton(onPressed: (){
+                  // Get.showSnackbar(const GetSnackBar(
+                  //   title: 'Testing',
+                  //   message: 'Tesing getx snackbar',
+                  // ));
+              Get.dialog(const AlertDialog(
+                title: Text('Dialog'),
+              ));
+                }, child: const Text('Show Toast')),
           ],
         ),
       ),
