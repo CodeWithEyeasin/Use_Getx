@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
             //   fontWeight: FontWeight.w700,
             // ),),),
             GetBuilder<CounterController>(
-              builder: (_) {
+              builder: (counterController) {
                 return Text('${_counterController.counter}',style: const TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.w700,
